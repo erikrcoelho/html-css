@@ -1,0 +1,142 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'automove';
+    src: url('fontes/automove.ttf') format('truetype');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'strong';
+    src: url('fontes/strong.ttf') format('truetype');
+    font-weight: normal;
+    
+}
+
+
+
+
+  *{
+    margin: 0px;
+    padding: 0px;
+   }
+:root{
+    --cor0:#262626a8;
+    --cor1:#c2a077;
+    --cor2:#3a4a7a;
+    --cor3:#1e2741;
+    --cor4:#283458;
+    
+
+    --fonte-padrao:Arial, Helvetica, sans-serif;
+    --fonte-importada: ;
+    --fonte-automotiva:'automove', sans-serif;
+    --fonte-retro:'strong';
+    
+}
+
+body{
+    background-color: var(--cor0);
+    font-family: var(--fonte-padrao);
+}
+header{
+text-align: center;
+height: 180px;
+background-image: linear-gradient(to bottom, var(--cor2), var(--cor3));
+
+}
+header h1{
+    color: var(--cor1);
+    padding: 30px;
+    font-family:var(--fonte-retro) ;
+    line-height: 1em;
+    font-size: 3em;
+    letter-spacing: 3px;
+    font-weight: 100;
+    
+}
+header p{
+    color: var(--cor1);
+}
+nav{
+    text-align: center;
+    background-color: var(--cor3);
+    padding: 12px;
+}
+nav a{
+    text-decoration: none;
+    color: var(--cor1);
+    font-weight: bolder;
+    padding: 13px;
+}
+nav a:hover{
+    background-color: #3a4a7a3a;
+}
+main{
+    padding: 30px;
+    margin: auto;
+    background-color: white;
+    min-width: 400px;
+    max-width: 1000px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-style: groove;
+}
+main h1{
+    text-align: center;
+    padding: 15px;
+    font-family: var(--fonte-automotiva);
+    padding: 30px;
+
+}
+main h2{
+    padding: 20px;
+    font-family: var(--fonte-automotiva);
+}
+main p{
+    padding: 5px;
+    font-size: 1em;
+}
+main h2.subtitulomenor{
+    font-size: 1em;
+}
+main a.externo{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor4);
+}
+main a.externo:hover{
+    color: var(--cor1);
+    
+}
+main img{
+    width: 100%;
+}
+aside{
+    columns: 1;
+}
+
+aside a{
+    text-decoration: none;
+    
+}
+
+
+footer{
+    text-align: center;
+    background-color: var(--cor2);
+    padding: 10px;
+    color: white;
+}
+footer a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+footer a:hover{
+    text-decoration: underline;
+    color: var(--cor1);
+}
