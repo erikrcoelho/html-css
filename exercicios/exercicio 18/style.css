@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "Christmas";
+    src: url('PWHappyChristmas.ttf') format('truetype'); 
+}
+body{
+    font-family: 'Christmas', Helvetica, sans-serif;
+    font-weight: normal;
+}
+h1{
+    font-family: 'Christmas', Times, serif;
+    font-weight: normal;
+}

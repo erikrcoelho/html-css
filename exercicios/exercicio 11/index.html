@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens dinamicas</title>
+</head>
+<body>
+    <h1>Imagens dinamicas &#x1F60E;</h1>
+    <p>Abra esse site em qualquer dispositivo!</p>
+    <ul type="circle">
+        <li>Celulares</li>
+        <li>Tablets</li>
+        <li>Computadores</li>
+    </ul>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/imagem-pequena.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/imagem-media.png" type="image/png">         <!--nada de barra de rolagem lateral na imagem fi-->
+        <img src="imagens/imagem-grande.png" alt="">
+    </picture>                                                                              <!--imagens flexiveis facilitam e MUITO a vida do usuario do seu site-->
+
+    <h1>Reproduzindo audios</h1>
+    <p>Cuidado musicas pesadas abaixo</p>
+     <!---<audio src="midia/rock.mp3" controls autoplay></audio>-->
+    <!--Formatos de audio: MP3 WAV OGG-->
+    <audio preload="metadata" autoplay controls>  <!--loop musica vai ficar em modo loop-->
+        <source src="midia/godzilla.mp3" type="audio/mpeg">
+        <source src="midia/godzilla.wav" type="audio/wav">   <!--*WAV é um arquivo pesadissimo pro seu navegador ent cuidado-->
+        <source src="midia/godzilla.ogg" type="audio/ogg">
+        <p>Seu navegador não consegue reproduzir audios <a href="midia/godzilla.mp3">Clique aqui para baixar o audio em MP3</a></p>
+    </audio>
+</body>
+</html>
