@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testanto password e textbox</title>
+</head>
+<body>
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <p>
+            <label for="isu">Usuario:</label>
+            <input type="text" name="usuario" id="isu" required  >
+        </p>
+
+        <p>
+            <label for="isen">Senha:</label>
+            <input type="password" name="senha" id="isen" required minlength="8" placeholder="minimo 8 letras">
+        </p>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
