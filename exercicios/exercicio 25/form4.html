@@ -6,13 +6,29 @@
     <title>Formularios com telefone e email</title>
 </head>
 <body>
-    <form action="">
-        <div>
-            <label for="">Email:</label>
-            <input type="text" name="" id="">                <!--Estudar RegEx-->
-        </div>
-        
-
+    <form action="cadastro.php" method="get">
+    
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome">
+            </p>
+            
+            <p>
+                <label for="imail">Email:</label>
+                <input type="email" name="email" id="imail" autocomplete="email">
+            </p>                                                <!--Estudar RegEx-->
+            
+            <p>
+                <label for="itel">Telefone:</label>
+                <input type="tel" name="tel" id="itel" placeholder="(xx) xxxxx-xxxx" autocomplete="tel" pattern="^\(\d{2}\)\d{5,5}-\d{4}$">
+            </p>
+             <!--coloquei o pattern no formato que se adiciona um numero no whatsapp-->
+            <p>
+                <input type="submit" value="Enviar">
+            </p>
+        </fieldset>
     </form>
 </body>
 </html>
