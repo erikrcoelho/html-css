@@ -7,5 +7,24 @@
 </head>
 <body>
     <h1>Testando o output</h1>
+    <form action="cadastro.php">
+
+        <p>
+            <label for="in1">Numero 1:</label>
+            <input type="number" id="n1" name="in1" required oninput="isoma.innerHTML=Number(in1.value) + Number(in2.value)">
+        </p>
+        <p>
+            <label for="in2">Numero 2:</label>
+            <input type="number" id="n2" name="in2" required oninput="isoma.innerHTML=Number(in1.value) + Number(in2.value)">
+        </p>
+        <p>
+            <label for="isoma">Soma:</label>
+            <output name="soma" id="isoma">0</output>
+        </p>
+
+        <p><input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
 </body>
 </html>
