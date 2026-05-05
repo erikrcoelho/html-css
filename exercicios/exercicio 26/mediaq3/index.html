@@ -6,12 +6,43 @@
     <title>Media Query</title>
     <style>
         /*Configurações gerais*/
+        *{
+        margin: 0px;
+        padding: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+        }
+        html, body{
+            background-color: #233eff;
+            width: 100vw;
+            height: 100vh;
+            background-size: contain;
+            background-repeat: no-repeat;
+            
+        }
+        h1{
+            color: white;
+            padding: 10px;
+            text-shadow: 2px 2px 5px rgb(0, 78, 65);
+        }
         /*Configurações retrato*/
+        @media screen and (orientation: portrait){ 
+            body{
+                background-image: url("../mediaq2/imagensq2/cev-portrait.jpg");
+                background-position: center bottom;
+            }
+        } 
         /*Configurações paisagem*/
+        @media screen and (orientation: landscape){
+            body{
+                background-image: url("../mediaq2/imagensq2/cev-landscape.jpg");
+                background-position: left bottom;
+    
+            }
+        }
     </style>
 </head>
 <body>
-    <h1>Mude a orientação do seu dispositivo</h1>
+    <h1>Reunindo tudo em um unico css</h1>
     
 </body>
 </html>
