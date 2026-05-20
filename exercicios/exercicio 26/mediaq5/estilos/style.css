@@ -16,6 +16,17 @@ header > h1{
     padding: 10px;
 }
 
+span#burguer{
+    background-color: rgb(53, 53, 53);
+    display: block;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+span#burguer:hover{
+    cursor: pointer;
+}
+
 menu{
     display: block;
 }
