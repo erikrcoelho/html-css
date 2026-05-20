@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+html{
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.5em;
+    font-size: 1.5em;
+}
+menu{
+    display: none;
+}
+span#burguer{
+    display: none;
+}
