@@ -3,18 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flexible Box</title>
+    <title>Alinhamento de elementos empacotados no Flexbox</title>
    <style>
         div.conteiner{
             background-color: aqua;
+            height: 400px;
             display: flex;
+            flex-flow: row wrap;
+            align-content: space-between;
            
         }
         div.item{
             background-color: bisque;
             border: 1px solid black;
             text-align: center;
-            flex: auto;     /*use flex:auto; se quiser algo fluido como a agua dentro de um recipiente*/
+            padding: 40px;
+            
         }
    </style>
 </head>
@@ -26,6 +30,13 @@
         <div class="item">D</div>
         <div class="item">F</div>
         <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
+        <div class="item">K</div>
+        <div class="item">K</div>
+        <div class="item">K</div>
+        <div class="item">K</div>
     </div>
 </body>
 </html>
