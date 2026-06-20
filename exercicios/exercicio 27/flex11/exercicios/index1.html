@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando controle do tamanho de itens flexíveis</title>
+</head>
+<style>
+    div.conteiner{
+        background-color: aqua;
+        flex-flow: row nowrap;
+        display: flex;
+    }
+    div.item{
+        background-color: bisque;
+        text-align: center;
+        border: 1px solid black;
+        flex-basis: 250px;
+    }
+    div#cxA{
+        flex-grow: 0;
+        flex-shrink: 10;
+    }
+    div#cxB{
+        flex-grow: 0;
+        flex-shrink: 2;
+    }
+    div#cxC{
+        flex-grow: 0;
+        flex-shrink: 20;
+    }
+</style>
+<body>
+    <div class="conteiner">
+        <div class="item" id="cxA">A</div>
+        <div class="item" id="cxB">B</div>
+        <div class="item" id="cxC">C</div>
+    </div>
+    
+</body>
+</html>
