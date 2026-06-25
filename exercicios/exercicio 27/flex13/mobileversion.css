@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+    
+    header,header>nav{
+        flex-flow: column nowrap;
+        /*width: 100vw; pode ser feito assim o menu hamburguer*/ 
+    }
+    header>h1{
+        flex-basis: 45px;
+    }
+    header >nav >a{
+        width: 90vw; /*ou pode ser feito assim*/
+    }
