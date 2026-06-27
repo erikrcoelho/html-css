@@ -23,12 +23,36 @@ section.flex-content{
 article.media-text{
     display: flex;
     flex-flow: wrap-reverse;
+    justify-content: space-between;
 }
 article.text-media{
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-between;
 }
-p,h1,h2{
+article>div.text{
+    flex: 1 1 500px;
+}
+article>div.media{
+    flex: 1 0 400px;
+}
+p{
     margin-bottom: 10px;
     text-align: justify;
+}
+h1,h2{
+    margin-bottom: 20px;
+    line-height: 1.2em;
+    text-align: left;
+}
+div.media>img{
+    display: block;
+    margin: auto;
+    width: 300px;
+}
+div.media>iframe{
+    display: block;
+    margin: auto;
+    width: 90%;
+    
 }
